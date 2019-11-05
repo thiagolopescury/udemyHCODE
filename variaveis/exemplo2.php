@@ -9,7 +9,7 @@ echo "<br/>";
 
 unset($nomeCompleto);
 
-//definindo se a varivel $nomeCompleto esta setada
+//verificando se a varivel $nomeCompleto esta setada
 if (isset($nomeCompleto)) {
     echo $nomeCompleto;
 }else{
