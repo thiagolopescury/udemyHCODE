@@ -1,7 +1,7 @@
  <?php
 $anoNascimento = 2016;
 $anoAtual = date('o');
-intval($anoAtual);
+$anoAtual = intval($anoAtual);
 $idade = $anoAtual - $anoNascimento;
 
 $idadeCrianca = 12;
