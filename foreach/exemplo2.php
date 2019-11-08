@@ -6,6 +6,9 @@
  </form>
  <?php
 
+    // $key esta pegando o nome dos campos do form
+    // $value esta pegando o valor digitado pelo usuario no campo.
+
     if (isset($_GET)) {
         foreach ($_GET as $key => $value) {
             echo "nome do campo : " . $key;
