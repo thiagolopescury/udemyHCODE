@@ -28,5 +28,5 @@ if ($idade >=16) {
     echo"Não pode votar ";
 }
 
-?>
+ ?>
 

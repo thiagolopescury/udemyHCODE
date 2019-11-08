@@ -1,22 +1,20 @@
  <?php
-$anoNascimento = 2016;
-$anoAtual = date('o');
-$anoAtual = intval($anoAtual);
-$idade = $anoAtual - $anoNascimento;
+    $anoNascimento = 2016;
+    $anoAtual = date('o');
+    $anoAtual = intval($anoAtual);
+    $idade = $anoAtual - $anoNascimento;
 
-$idadeCrianca = 12;
-$maiorIdade = 18;
-$idadeVelho = 65;
+    $idadeCrianca = 12;
+    $maiorIdade = 18;
+    $idadeVelho = 65;
 
-if ($idade <= 12) {
-    echo " Você é menor de idade, não pode entrar";
-}
-elseif($idade >= 18 & $idade < 64){
-    echo " Seja Bem vindo jovem,have fun!";
-}
-else{
-    echo" Olá senhor, aproveite com moderação";
-}
+    if ($idade <= 12) {
+        echo " Você é menor de idade, não pode entrar";
+    } elseif ($idade >= 18 & $idade < 64) {
+        echo " Seja Bem vindo jovem,have fun!";
+    } else {
+        echo " Olá senhor, aproveite com moderação";
+    }
 
 
     ?>
