@@ -1,6 +1,8 @@
  <form>
-     <input type="text" name="nome">
+     <input type="text" name="nome" placeholder="Digite seu Nome">
      <input type="date" name="nascimento">
+     <input type="text" name="rua"placeholder="Digite sua rua">
+     <input type="password" name="senha"placeholder="Digite sua senha">
      <input type="submit" value="enviar">
 
  </form>
