@@ -20,6 +20,6 @@ switch (session_status()) {
         break;
 
     case PHP_SESSION_ACTIVE :
-        echo " As sessões estao ativas e habilitadas";
+        echo " As sessões estao ativas e habilitadas,,,,,,,,,,,,,,,,,,,,,,,";
         break;
 }
