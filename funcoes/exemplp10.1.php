@@ -3,7 +3,7 @@
 function test($callback){
     // Processo lento
 
-    $callback;
+    $callback();
 }
 
  test(function(){
