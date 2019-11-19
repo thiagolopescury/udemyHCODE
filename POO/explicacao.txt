@@ -1,3 +1,4 @@
-classes são assuntos que voce cria para comapctar seus programas
-atributos dentros das classes são iguais variaveis com novas funçoes
+classes são assuntos que voce cria para compactar seus programas
+atributos dentros das classes são iguais variaveis 
 metodos dentros das classes são iguais a funcoes.
+objeto é uma variavel que chama/estancia uma classe
