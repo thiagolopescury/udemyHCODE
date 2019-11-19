@@ -1,0 +1,3 @@
+classes são assuntos que voce cria para comapctar seus programas
+atributos dentros das classes são iguais variaveis com novas funçoes
+metodos dentros das classes são iguais a funcoes.
