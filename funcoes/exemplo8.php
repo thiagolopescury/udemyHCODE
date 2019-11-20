@@ -1,6 +1,6 @@
 <?php
 
-function soma(int ...$valores) :string {
+function soma(int ...$valores):string {
     return array_sum($valores);
 }
 
