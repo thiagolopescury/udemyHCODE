@@ -71,7 +71,7 @@ class Documento
 }
 
 $cpf = new Documento();
-$cpf->setNumero("1231321");
+$cpf->setNumero("79348629620");
 
 var_dump($cpf->getNumero());
  ?>
