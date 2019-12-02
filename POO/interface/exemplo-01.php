@@ -28,5 +28,5 @@ class Civic implements Veiculo{
 
 $carro = new Civic();
 
-$carro->trocarMarcha(1);
+$carro->trocarMarcha(2);
 ?>
