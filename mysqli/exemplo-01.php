@@ -1,7 +1,7 @@
 <?php
 
 $conn = new mysqli("localhost", "root", "", "bdphp7");
-if ($conn->connect_error){
+if ($conn->connect_error) {
 
     echo "Error: " . $conn->connect_error;
 }
@@ -24,5 +24,3 @@ printf("%d Row inserted.\n", $stmt->affected_rows);
 
 /* close statement and connection */
 $stmt->close();
-
-?>
