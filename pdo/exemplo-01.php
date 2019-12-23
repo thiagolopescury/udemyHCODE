@@ -13,7 +13,7 @@ foreach ($results as $row) {
         echo "<strong>".$key.":</strong>".$value."<br>";
     }
 
-    echo "=====================================<br>";
+    echo "====================================<br>";
 }
 
 ?>

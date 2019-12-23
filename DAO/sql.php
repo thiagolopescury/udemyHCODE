@@ -22,7 +22,7 @@ class Sql extends PDO
             $this->setParam($statment, $key, $value);
         }
     }
-
+ 
     private function setParam($statment, $key, $value)
     { // este método recebe uma query preparada, a chave e o valor, ou seja atua em uma query apenas
         //no exemplo inicial do select, este método não é chamado por o array dentro de setParams() está vazio
@@ -48,7 +48,7 @@ class Sql extends PDO
 
 
     /* 1 */
-    public function select($rawQuery, $params = array())
+    public function select($rawQuery, $params = array()):array
     {
 
 
