@@ -91,7 +91,6 @@ class Usuario
         if (count($results) > 0) {
 
             $this->setData($results[0]);
-            
         } else {
             throw new Exception("Login e/ou senha inválidos ");
         }
@@ -114,29 +113,43 @@ class Usuario
             ':PASSWORD' => $this->getDessenha()
         ));
 
-        if (count($results) > 0){
+        if (count($results) > 0) {
             $this->setData($results[0]);
         }
     }
 
-    public function update($login, $password){
+    public function update($login, $password)
+    {
         $this->setDeslogin($login);
         $this->setDessenha($password);
 
         $sql = new Sql();
 
-        $sql->query("UPDATE tbl_usuarios SET deslogin = :LOGIN , dessenha = :PASSWORD WHERE id = :ID" , array(
-            ':LOGIN'=>$this->getDeslogin(),
-            ':PASSWORD'=>$this->getDessenha(),
-            ':ID'=>$this->getId()
+        $sql->query("UPDATE tbl_usuarios SET deslogin = :LOGIN , dessenha = :PASSWORD WHERE id = :ID", array(
+            ':LOGIN' => $this->getDeslogin(),
+            ':PASSWORD' => $this->getDessenha(),
+            ':ID' => $this->getId()
         ));
+    }
+
+    public function delete()
+    {
+        $sql = new Sql();
+
+        $sql->query("DELETE  FROM tbl_usuarios  WHERE id = :ID", array(
+            ':ID' => $this->getId()
+        ));
+
+        $this->setId(0);
+        $this->setDeslogin("");
+        $this->setDessenha("");
+        $this->setDtcadastro(new DateTime());
     }
 
     public function __construct($login = " ", $password = " ")
     {
         $this->setDeslogin($login);
         $this->setDessenha($password);
-        
     }
 
     public function __toString()
