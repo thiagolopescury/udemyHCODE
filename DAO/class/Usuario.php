@@ -107,6 +107,17 @@ class Usuario
         }
     }
 
+    public function insert()
+    {
+        $sql = new Sql();
+
+        $results = $sql->select("CALL sp_usuarios_insert(:LOGIN, :PASSWORD)",array(
+            ':LOGIN'=>$this->getDeslogin(),
+            ':PASSWORD'=>$this->getDessenha()
+        ));
+    }
+
+
     public function __toString()
     {
         return json_encode(array(
