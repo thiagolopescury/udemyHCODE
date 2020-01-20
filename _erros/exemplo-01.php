@@ -14,6 +14,4 @@ set_error_handler("error_handler");
 
 $a = 100 / 0;
 
-
-
 ?>
