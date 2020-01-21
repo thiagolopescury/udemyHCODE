@@ -1,0 +1,15 @@
+{
+    "name": "thiagobadman/composer",
+    "description": "Aula teste de php",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Thiago lopes",
+            "email": "thiagolopes0@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
